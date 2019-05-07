@@ -1,14 +1,15 @@
 
-## [OpenAI Gym](https://gym.openai.com/) Environment for Trading
+## Deep Reinforcement Learning via Market Making Research Project
 
-### Environment for reinforcement-learning algorithmic trading models
+### Alpha Vantage API
 
-The Trading Environment provides an environment for single-instrument trading
-using historical bar data.
+We get historical and real-time trading data from [Alpha Vantage](https://www.alphavantage.co).
 
+### Limit Order Book
 
-See
-[here](https://github.com/hackthemarket/gym-trading/blob/master/gym_trading/envs/TradingEnv.ipynb)
-for a jupyter notebook describing basic usage and illustrating a
-(sometimes) winning strategy based on policy gradients implemented on
-tensorflow.
+A limit order book is a record of unexecuted limit orders maintained by the security specialist who works at the exchange. We made a model of the limit order book simulating the real manipulations like add, remove, etc.
+
+### Visualization
+
+We used TradingGym toolkit for training and backtesting the reinforcement learning algorithms. This toolkit imitates
+the framework form of OpenAI Gym and helps visualize the process.
