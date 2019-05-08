@@ -1,4 +1,4 @@
-from .envs import available_envs_module
+from envs import available_envs_module
 
 def available_envs():
     available_envs = [env_module.__name__.split('.')[-1] for env_module in available_envs_module]

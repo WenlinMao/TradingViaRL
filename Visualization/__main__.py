@@ -6,7 +6,7 @@ from datetime import datetime
 st = datetime.now()
 ## need to refactor the testcase
 
-df = pd.read_csv('data/SGXTWsample.csv', index_col=0, parse_dates=['datetime'])
+df = pd.read_csv('test/data/SGXTWsample.csv', index_col=0, parse_dates=['datetime'])
 
 env = trading_env.make(env_id='training_v1', obs_data_len=256, step_len=128,
                        df=df, fee=0.1, max_position=5, deal_col_name='Price', 
